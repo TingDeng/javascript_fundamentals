@@ -61,12 +61,12 @@
     <!-- Page Content -->
     <div class="container">
         <div id="first">
-            
+
         </div>
         <!-- /#first -->
 
         <div id="second">
-            
+
         </div>
         <!-- /#second -->
     </div>
@@ -92,32 +92,55 @@
     //Arrays
 
     //Objects
+var number=0; var a=2; var b=2.0;//same with 2;
+var c=false;  var d=true;
+var x ='bacon';
+var y ="bacon";
+var z = [true,1,'hummer']
+var obj={firstName:'justin',lastName:'Dennison'};
+var objAlso={'firstName':'justin','lastName':'Dennison'};//firstName has quote then call it should add quote
+console.log(a+b);
+console.log(c&&d);
+console.log(x+y+x);
+z[2] ="crowbar";
+console.log(z);
+console.log(obj.firstName);
+console.log(objAlso["firstName"]);
+obj.firstName="MC";
+console.log(obj.firstName);
+console.log('number'+number);
 
-/*
-    Assignment: Create a variable for each of the following data types-
-                A. number
-                B. string
-                C. boolean
-                D. array
-                    i. Create an array with three numbers in it.
-                E. object
-                    i. You must have two properties name and age
-                    ii. You can set those properties to values of any type, but you must have a value
+    //Assignment: Create a variable for each of the following data types-
+                //A. number
+                //B. string
+                //C. boolean
+                //D. array
+                    //i. Create an array with three numbers in it.
+                //E. object
+                    //i. You must have two properties name and age
+            var o={name:"Ann",age:1};
+                    //ii. You can set those properties to values of any type, but you must have a value
+            console.log("name: "+o.name+","+"age: "+o.age);
 
-        A. Using the number and MDN documentation/others that you can console.log the results of various math operations: *, /, +, -, square root, floor, ceil, and a random number between 0 and 1.
-        B. Using the string variable console.log each of the following: 
-                - Add the word "Hey" to the end of your string variable
-                - The second letter of your string variable's value
-                - The index of the letter 'e' in your string
-                - The first three letters of your string
-        C. Use your boolean [called bool in these instructions] print the results of your boolean expressions for the following:
+      //  A. Using the number and MDN documentation/others that you can console.log the results of various math operations: *, /, +, -, square root, floor, ceil, and a random number between 0 and 1.
+      var i=3; var j=4
+      console.log(i*j+","+i/j+","+(i+j)+","+(i-j)+",");
+      // B. Using the string variable console.log each of the following:
+              //  - Add the word "Hey" to the end of your string variable
+              //  - The second letter of your string variable's value
+              //  - The index of the letter 'e' in your string
+              //  - The first three letters of your string
+      var st=["l","a","l","a"];var h=["H","e","y"];
+      console.log(st+h+","+st[1]);
+
+      /*  C. Use your boolean [called bool in these instructions] print the results of your boolean expressions for the following:
                 - !bool
                 - bool || false
                 - bool || true
                 - bool && false
                 - bool && true
                 - !(bool || false)
-                - !(bool && false) 
+                - !(bool && false)
         D. Console.log the following:
             - The last element of the array WITHOUT changing the array
             - The last element of the array WITH changing the array
